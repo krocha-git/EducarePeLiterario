@@ -1,0 +1,111 @@
+/* Header */
+header{
+    background-color: #f5f5bc; /* Define a cor que será usada como plano de fundo para o elemento. */
+}
+
+h1{
+    font-size: 2.5rem; /* Tamanho da fonte */
+    color: #5a1997; /* Cor do texto */
+    text-align: center; /* Alinha o texto dentro do elemento */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Main */
+
+/* Logo */
+
+.Logomarca{
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    margin-top: 10px; /* Espaçamento acima dos inputs */
+}
+
+/* Apoio */
+
+fieldset{
+    border: 5px ridge #895e29; /* border-width + border-style + border-color */
+    width: 50rem; /* Largura dos inputs */
+    height: 25vh; /* Altura dos inputs */
+    margin-left: 350px; /* Espaçamento à esquerda dos inputs */
+    background-color: #add8e6; /* Define a cor que será usada como plano de fundo para o elemento. */
+}
+
+fieldset:hover {
+    border: 5px ridge #add8e6; /* border-width + border-style + border-color */
+    background-color: #f5f5bc; /* Define a cor que será usada como plano de fundo para o elemento. */
+    box-shadow: 10px 20px #808080; /* Define sombreamento do elemento (espaçamento horizontal + espaçamento vertical + cor) */
+}
+
+legend{
+    color: #895e29; /* Cor do texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.Apoio p{
+    color: #895e29; /* Cor do texto */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    font-size: 17px; /* Tamanho da fonte */
+}
+
+.Apoio a{
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #895e29; /* Cor do texto */
+}
+
+.Apoio a:hover{
+    color: #ffff00; /* Cor do texto */
+}
+
+.PS{
+    font-size: 8px; /* Tamanho da fonte */
+}
+
+/* Autor */
+
+.Autor{
+    width: 40rem; /* Largura da caixa de resultados em telas menores */
+    height: 40vh; /* Altura da caixa de resultados em telas menores */
+    margin-left: 400px; /* Espaçamento à esquerda dos inputs */
+    margin-top: 30px; /* Espaçamento acima dos inputs */
+    color: #0000ff; /* Cor do texto */
+}
+
+.Autor summary{
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+.Autor .fmclogo{
+    width: 200px; /* Largura dos inputs */
+    height: 200px; /* Altura dos inputs */
+    margin-left: 220px; /* Espaçamento à esquerda dos inputs */
+}
+
+.Autor .fmclogo:hover{
+    content: url('Icones/KR-familia.jpg'); /* Troca a figura ao passar o mouse */
+}
+
+.Autor p{
+    text-align: justify; /* Alinha o texto dentro do elemento */
+}
+
+.Autor img{
+    width: 30px; /* Largura dos inputs */
+    height: 30px; /* Altura dos inputs */
+}
+
+/* Footer */
+
+footer{
+    background-color: #f5f5bc; /* Define a cor que será usada como plano de fundo para o elemento. */
+    margin-top: 180px; /* Espaçamento acima dos inputs */
+    color:#999999; /* Cor do texto */
+    text-align: center; /* Alinha o texto dentro do elemento */
+    font-size: 10px; /* Tamanho da fonte */
+}
+
+footer .voltar{
+    width: 50px; /* Largura dos inputs */
+    height: 50px; /* Altura dos inputs */
+}

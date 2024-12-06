@@ -1,0 +1,193 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    background-image: url('Figuras/MagicalBeans.jpg'); /* Define a imagem que será usada como plano de fundo para o elemento. */
+    background-repeat: no-repeat; /* Determina como a imagem de fundo será repetida. */
+    background-position: center; /* Define a posição da imagem de fundo dentro do elemento. */
+    background-size: cover; /* Define o tamanho e a forma como a imagem de fundo se ajusta ao elemento. */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: end; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Estiliza os títulos h1 */
+h1{
+    color: #ff0000; /* Cor do texto */
+    font-family: cursive; /* Define a fonte padrão */
+    font-size: 50px; /* Tamanho da fonte */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza as seções da página */
+.container {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    width: 30rem; /* Largura dos inputs */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    background-color: transparent; /* Cor de fundo do input */
+    color: #ffff00; /* Cor do texto */
+    border-color: #5a1997; /* Cor da borda do input */
+    border-radius: 1.5rem; /* Borda arredondada */
+    border-style: solid; /* Estilo da Borda */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+section input::-webkit-input-placeholder {
+    color: #ff0000; /* Cor do texto */
+}
+
+section input:hover{
+    background-color: #008000; /* Muda a cor de fundo ao passar o mouse */
+    border-color: #ffff00; /* Cor da borda do input */
+    box-shadow: 0 4px 8px #adff2f; /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    background-color: transparent; /* Cor de fundo do botão */
+    color: #ff0000; /* Cor do texto do botão */
+    border-color: #5a1997; /* Cor da borda do botão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    border-style: solid; /* Estilo da Borda */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #008000; /* Muda a cor de fundo ao passar o mouse */
+    color: #ffff00; /* Cor do texto do botão */
+    border-color: #ffff00; /* Cor da borda do botão */
+    box-shadow: 0 4px 8px #adff2f; /* Adiciona uma sombra mais intensa */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 46vb; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    width: 500px; /* Define a largura máxima do elemento */
+    height: 500px; /* Define a altura máxima do elemento */
+    border: 30px solid transparent; /* Define espessura, estilo e cor da borda */
+    border-image: url('Figuras/VarinhaCondãoLeft.jpg') 30 round; /* Define imagem que irá compor a borda */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #ff0000; /* Cor do texto */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #adff2f; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+.autor-meta {
+    color: #ff0000; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #adff2f; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    background-color: #008000; /* Muda a cor de fundo ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #ffff00; /* Cor do texto dos links */
+    box-shadow: 0 4px 8px #adff2f; /* Adiciona uma sombra mais intensa */
+}
+
+.resultados-pesquisa h3 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #ff0000; /* Cor do texto */
+}
+
+.imagemvarinha {
+    width: 400px; /* Define a largura máxima do elemento */
+    height: 100px; /* Define a altura máxima do elemento */
+    object-fit: cover; /* A imagem preencherá todo o container, cortando as partes que não cabem */
+}
+
+.imagemchapeu {
+    width: 300px; /* Define a largura máxima do elemento */
+    height: 300px; /* Define a altura máxima do elemento */
+    object-fit: cover; /* A imagem preencherá todo o container, cortando as partes que não cabem */
+}
+
+
+footer{
+    color: #ff0000; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    font-style: italic; /* Estilo da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    width: 100%; /* Largura total da página */
+}
+
+footer .Agradecimentos{
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ff0000; /* Cor do texto */
+}
+
+footer .Agradecimentos:hover{
+    background-color: #008000; /* Muda a cor de fundo ao passar o mouse */
+    color: #ffff00; /* Cor do texto */
+    box-shadow: 0 4px 8px #adff2f; /* Adiciona uma sombra mais intensa */
+}
+
+footer img{
+    width: 80px; /* Define a largura máxima do elemento */
+    height: 80px; /* Define a altura máxima do elemento */
+    position: fixed; /* Posiciona o elemento de forma fixa na página */
+    top: 30px; /* Posiciona o elemento em relação à borda superior */
+    right: 30px; /* Posiciona o elemento em relação à borda da direita */
+}
+
+.Apagar{
+    margin-top: 10px; /* Espaçamento acima dos itens */
+}
+
+.ApagarPesquisa{
+    margin-top: 10px; /* Espaçamento acima dos itens */
+    margin-left: 170px; /* Espaçamento à esquerda dos itens */
+}
